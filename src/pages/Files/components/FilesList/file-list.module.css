@@ -1,0 +1,5 @@
+.file-list {
+  max-height: fit-content;
+  overflow: auto;
+  overscroll-behavior: contain;
+}

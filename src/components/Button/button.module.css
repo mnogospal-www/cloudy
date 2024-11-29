@@ -1,0 +1,14 @@
+.button {
+  padding: 0.8em;
+  font-size: 1em;
+  font-family: inherit;
+  max-width: fit-content;
+  border: var(--border-width) solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--basic-color);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+}

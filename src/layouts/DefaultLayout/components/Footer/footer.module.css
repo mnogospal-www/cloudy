@@ -1,0 +1,15 @@
+.footer {
+  padding: var(--container-padding);
+  font-size: 0.8em;
+  font-weight: 100;
+  border-top: var(--border-width) solid var(--secondary-color);
+  color: var(--secondary-color);
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

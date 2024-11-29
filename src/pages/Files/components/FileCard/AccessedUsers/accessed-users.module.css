@@ -1,0 +1,17 @@
+.accessed-user {
+  border-bottom: var(--border-width) solid var(--primary-color);
+  list-style: decimal-leading-zero inside;
+  padding: 1em 0;
+
+  button {
+    margin-top: 1em;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    padding: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

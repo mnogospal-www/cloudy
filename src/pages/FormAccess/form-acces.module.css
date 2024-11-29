@@ -1,0 +1,13 @@
+.form-access-wrapper {
+  margin: 0 auto;
+  flex-grow: 1;
+  width: clamp(40%, 600px, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+
+  button {
+    margin-top: 2em;
+  }
+}
