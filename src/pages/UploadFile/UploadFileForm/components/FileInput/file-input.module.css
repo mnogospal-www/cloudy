@@ -1,0 +1,16 @@
+.file-input {
+  input {
+    flex-grow: 1;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  label {
+    width: fit-content;
+    flex-grow: 1;
+    display: block;
+    padding: 0.8em;
+    border: var(--border-width) solid var(--primary-color);
+    cursor: pointer;
+  }
+}

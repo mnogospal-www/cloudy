@@ -1,0 +1,15 @@
+.files {
+  flex-grow: 1;
+  overflow: auto;
+  max-height: 85vh;
+  list-style: decimal-leading-zero inside;
+
+  .file {
+    width: 100%;
+    padding: 1em 0.5em;
+    border-bottom: var(--border-width) solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+}

@@ -1,5 +1,5 @@
 .file-list {
-  max-height: fit-content;
+  flex-grow: 1;
   overflow: auto;
-  overscroll-behavior: contain;
+  max-height: 85vh;
 }

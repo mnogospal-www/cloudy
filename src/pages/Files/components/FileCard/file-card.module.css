@@ -8,21 +8,17 @@
 
   .file-stats {
     width: 100%;
-    text-wrap: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
     .file-name {
       margin-bottom: 1em;
     }
+  }
+
+  .button-wrapper {
+    display: flex;
+    gap: 1em;
   }
 }
 
 .even {
   background-color: var(--secondary-color);
-}
-
-.button-wrapper {
-  display: flex;
-  gap: 1em;
 }

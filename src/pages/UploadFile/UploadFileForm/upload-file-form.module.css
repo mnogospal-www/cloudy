@@ -1,21 +1,10 @@
-.form-wrapper {
-  flex-grow: 1;
+.upload-form-wrapper {
   display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 
-  form {
-    justify-content: space-between;
-  }
-
-  .vanila-input {
-    visibility: hidden;
-    position: absolute;
-  }
-
-  label {
-    width: fit-content;
-    padding: 1em;
-    display: block;
-    border: var(--border-width) solid var(--primary-color);
-    cursor: pointer;
+  .buttons-wrapper {
+    display: flex;
+    gap: 1em;
   }
 }

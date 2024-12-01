@@ -1,21 +1,33 @@
-import { Form, Button } from '../../../components/exporter';
+import { useState } from 'react';
+import { Button, Form } from '../../../components/exporter';
+import { FileInput, UploadFiles } from './components/exporter';
 import $ from './upload-file-form.module.css';
 
 function UploadFileForm() {
-  return (
-    <div className={$['form-wrapper']}>
-      <Form>
-        <input
-          type={'file'}
-          className={$['vanila-input']}
-          id={'vanila-input'}
-          name={'file'}
-        />
-        <label htmlFor='vanila-input'>Выберите файл</label>
+  const [files, setFiles] = useState([]);
 
-        <Button>Загрузить</Button>
-      </Form>
-    </div>
+  function onFileUpload({ target }) {
+    [...target.files].map((file, i) =>
+      setFiles((previousState) => [...previousState, file])
+    );
+  }
+
+  function deleteFile(name) {
+    setFiles(files.filter((file) => file.name !== name));
+  }
+
+  return (
+    <Form>
+      <div className={$['upload-form-wrapper']}>
+        <div className={$['buttons-wrapper']}>
+          <FileInput onChange={onFileUpload} />
+          {files.length > 0 && <Button>Загрузить</Button>}
+        </div>
+
+        <h1>{files.length === 0 ? 'Файлы не выбраны' : 'Выбраные файлы:'}</h1>
+        {files.length > 0 && <UploadFiles files={files} deleteFile={deleteFile} />}
+      </div>
+    </Form>
   );
 }
 

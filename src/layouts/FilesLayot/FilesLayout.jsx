@@ -4,7 +4,7 @@ import $ from './files-layout.module.css';
 
 const locationTitles = {
   '/files': 'Мои файлы',
-  '/files/upload': 'Загрузить новый файл',
+  '/files/upload': 'Загрузить файлы',
   '/files/shared': 'Доступные мне файлы',
 };
 
